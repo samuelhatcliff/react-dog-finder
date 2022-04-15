@@ -8,7 +8,7 @@ function DogList({ dogs }) {
             <h1>Dog List</h1>
             <ul>
                 {dogs.map(dog => (
-                    <li><Link to="/dogs/Perry">Test</Link></li>)
+                    <li><Link to={`/dogs/${dog.name}`}>{dog.name}</Link></li>)
                 )}
             </ul>
         </>
